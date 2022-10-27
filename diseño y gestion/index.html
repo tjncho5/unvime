@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Punto V</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./style.css" >
+    </head>
+    <body>
+
+        <table>
+            <thead>
+                <th>N°</th><th>PREGUNTA</th><th>RESPUESTA</th>
+            </thead>
+            <tbody>
+                <h1>Evaluacion: Capitales del Mundo</h1>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td><b>Cuál es la capital de Irán?</b></td>
+                    <td rowspan="2" id="1000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="1" id="11" onclick="evaluar(false, 1, 1000)"><label for="11">Bagdad</label> 
+                        <input type="radio" name="1" id="12" onclick="evaluar(true, 1, 1000)"><label for="12">Teherán</label> 
+                        <input type="radio" name="1" id="13" onclick="evaluar(false, 1, 1000)"><label for="13">Islamabad</label> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">2</td>
+                    <td><b>Cuál es la capital de Irak?</b></td>
+                    <td rowspan="2" id="2000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="2" id="21" onclick="evaluar(false, 2, 2000)"><label for="21">Kuwait</label> 
+                        <input type="radio" name="2" id="22" onclick="evaluar(false, 2, 2000)"><label for="22">Dubai</label> 
+                        <input type="radio" name="2" id="23" onclick="evaluar(true, 2, 2000)"><label for="23">Bagdad</label> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">3</td>
+                    <td><b>Cuál es la capital de Noruega?</b></td>
+                    <td rowspan="2" id="3000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="3" id="31" onclick="evaluar(false, 3, 3000)"><label for="31">Roma</label> 
+                        <input type="radio" name="3" id="32" onclick="evaluar(false, 3, 3000)"><label for="32">Copenague</label> 
+                        <input type="radio" name="3" id="33" onclick="evaluar(false, 3, 3000)"><label for="33">Estocolmo</label> 
+                        <input type="radio" name="3" id="34" onclick="evaluar(true, 3, 3000)"><label for="34">Oslo</label> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">4</td>
+                    <td><b>Cuál es la capital de Serbia?</b></td>
+                    <td rowspan="2" id="4000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="4" id="41" onclick="evaluar(true, 4, 4000)"><label for="41">Belgrado</label> 
+                        <input type="radio" name="4" id="42" onclick="evaluar(false, 4, 4000)"><label for="42">Zagreb</label> 
+                        <input type="radio" name="4" id="44" onclick="evaluar(false, 4, 4000)"><label for="44">Kabul</label> 
+                        <input type="radio" name="4" id="43" onclick="evaluar(false, 4, 4000)"><label for="43">Madrid</label> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">5</td>
+                    <td><b>Cuál es la capital de Australia?</b></td>
+                    <td rowspan="2" id="5000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="5" id="51" onclick="evaluar(false, 5, 5000)"><label for="51">Sidney</label> 
+                        <input type="radio" name="5" id="52" onclick="evaluar(false, 5, 5000)"><label for="52">Zurich</label> 
+                        <input type="radio" name="5" id="53" onclick="evaluar(true, 5, 5000)"><label for="53">Canberra</label> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">6</td>
+                    <td><b>Cuál es la capital de Canadá?</b></td>
+                    <td rowspan="2" id="6000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="6" id="61" onclick="evaluar(false, 6, 6000)"><label for="61">Toronto</label> 
+                        <input type="radio" name="6" id="62" onclick="evaluar(false, 6, 6000)"><label for="62">Montreal</label> 
+                        <input type="radio" name="6" id="63" onclick="evaluar(true, 6, 6000)"><label for="63">Ontario</label> 
+                        <input type="radio" name="6" id="64" onclick="evaluar(false, 6, 6000)"><label for="64">Buenos Aires</label> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">7</td>
+                    <td><b>Cuál es la capital de Vietnam?</b></td>
+                    <td rowspan="2" id="7000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="7" id="71" onclick="evaluar(false, 7, 7000)"><label for="71">Puket</label> 
+                        <input type="radio" name="7" id="72" onclick="evaluar(true, 7, 7000)"><label for="72">Ho Chin Ming</label> 
+                        <input type="radio" name="7" id="73" onclick="evaluar(false, 7, 7000)"><label for="73">Pan Lao Kung</label> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">8</td>
+                    <td><b>Cuál es la capital de China?</b></td>
+                    <td rowspan="2" id="8000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="8" id="81" onclick="evaluar(false, 8, 8000)"><label for="81">Shangai</label> 
+                        <input type="radio" name="8" id="82" onclick="evaluar(true, 8, 8000)"><label for="82">Pekin</label> 
+                        <input type="radio" name="8" id="83" onclick="evaluar(false, 8, 8000)"><label for="83">Seul</label> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">9</td>
+                    <td><b>Cuál es la capital de Pakistan?</b></td>
+                    <td rowspan="2" id="9000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="9" id="91" onclick="evaluar(true, 9, 9000)"><label for="91">Islamabad</label> 
+                        <input type="radio" name="9" id="92" onclick="evaluar(false, 9, 9000)"><label for="92">Kuwait</label> 
+                        <input type="radio" name="9" id="93" onclick="evaluar(false, 9, 9000)"><label for="93">Seul</label> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">10</td>
+                    <td><b>Cuál es la capital de Marruecos?</b></td>
+                    <td rowspan="2" id="10000"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="10" id="101" onclick="evaluar(false, 10, 10000)"><label for="101">Santiago de Chile</label> 
+                        <input type="radio" name="10" id="102" onclick="evaluar(true, 10, 10000)"><label for="102">Rabat</label> 
+                        <input type="radio" name="10" id="103" onclick="evaluar(false, 10, 10000)"><label for="103">Kabul</label> 
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div id="total"></div>
+        <script src="./app.js"></script>
+    </body>
+</html>
