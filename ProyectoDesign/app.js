@@ -32,9 +32,10 @@ let moveInterval;
 
 
 const gameOverfunction = () => {
-    gameOver.style.display = 'block';
+    gameOver.style.display = 'inline-block';
     clearInterval(moveInterval);
     startButton.disabled = false;
+    startButton.style.opacity = '1'
 }
 
 const moveSnake = () => {
@@ -145,6 +146,7 @@ const startGame = () => {
     setGame();
     gameOver.style.display = 'none';
     startButton.disabled = true;
+    startButton.style.opacity = '.5'
     drawSnake();
     updateScore();
     createRandomFood();
