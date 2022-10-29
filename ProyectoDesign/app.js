@@ -8,7 +8,7 @@ const gameOver = document.getElementById('gameOver');
 // AJUSTES INICIALES
 
 const boardSize = 10;
-const gameSpeed = 100;
+const gameSpeed = 300;
 const squareTypes = {
     emptySquare: 0,
     snakeSquare: 1,
