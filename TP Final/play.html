@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./playstyle.css">
+    <script src="./play.js" type="text/javascript" defer></script>
+    <title>Snake Game</title>
+</head>
+
+<body>
+
+    <main class="main">
+        <header id="xml"></header>
+        <aside></aside>
+        <div id="juego">
+            <div id="tablero"></div>
+            <div class="tableroInfo">
+                <div>
+                    <span id="namePlayer">Score Jugador: </span><span id="marcador"></span>
+                </div>
+                <button id="jugar">Start</button>
+            </div>
+            <div id="gameOver">Game Over</div>
+        </div>
+        <aside>
+            <div class="contenedor">
+                <label for="nombre">Nombre</label>
+                <input id="nombrePlayer" type="text" name="nombre" placeholder="Jugador">
+                <button id="getName">Guardar Jugador</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

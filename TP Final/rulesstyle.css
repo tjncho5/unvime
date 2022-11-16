@@ -1,0 +1,38 @@
+main {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#688f60, #b6ebad);
+    height: 100%;
+    grid-template-areas:
+    "header header header"
+    "izquierda contenido derecha";
+    grid-template-rows: 12% auto;
+    grid-template-columns: 10% 1fr 10%;
+}
+
+section {
+    padding: 50px 0;
+    text-align: justify;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+p {
+    font-weight: normal;
+    font-size: 35px;
+}
+
+header {
+    grid-area: header;
+}
+
+aside:first-of-type {
+    grid-area: izquierda;
+}
+
+aside:last-of-type {
+    grid-area: derecha;
+}
